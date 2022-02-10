@@ -1,79 +1,88 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script  src="https://cdn.tailwindcss.com"></script>
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <link rel="stylesheet" href="output.css">
 </head>
+
 <body>
 
-    <div class="font-sans antialiased bg-grey-lightest">
-        <!-- Top Nav -->
-        <div class="w-full bg-purple-900 fixed shadow z-1">
-          <div class="container mx-auto">
-            <div class="w-full flex justify-between items-center py-4 px-8">
-              <!-- Brand -->
-              <div class="text-center text-white font-bold">Your Company</div>
-              <!-- Navigation -->
-              <div class="items-center hidden sm:flex">
-                <a href="" class="text-white hover:text-green-lightest no-underline mx-2 px-2 py-2">Link 1</a>
-                <a href="" class="text-white hover:text-green-lightest no-underline mx-2 px-2 py-2">Link 2</a>
-                <a href="" class="bg-green-dark hover:bg-green-darker rounded-full text-white no-underline mx-2 px-4 py-2">Link 3</a>
+  <div class="font-sans antialiased bg-grey-lightest">
+    <!-- Top Nav -->
+    <div class="w-full bg-purple-900 fixed shadow z-1">
+      <div class="container mx-auto">
+        <div class="w-full flex justify-between items-center py-4 px-8">
+          <!-- Brand -->
+          <div class="text-center text-white font-bold">Your Company</div>
+          <!-- Navigation -->
+          <div class="items-center hidden sm:flex">
+            <a href="" class="text-white hover:text-green-lightest no-underline mx-2 px-2 py-2">Link 1</a>
+            <a href="" class="text-white hover:text-green-lightest no-underline mx-2 px-2 py-2">Link 2</a>
+            <a href=""
+              class="bg-green-dark hover:bg-green-darker rounded-full text-white no-underline mx-2 px-4 py-2">Link 3</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Content -->
+    <div class="w-full bg-grey-lightest" style="padding-top: 4rem;">
+      <div class="container mx-auto py-8">
+        <div class="w-5/6 lg:w-1/2 mx-auto bg-purple-500 rounded shadow">
+          <div class="py-4 px-8 text-black text-xl border-b border-grey-lighter">Register for a free account</div>
+          <div class="py-4 px-8">
+            <div class="flex mb-4">
+              <div class="w-1/2 mr-1">
+                <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name">First Name</label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name"
+                  type="text" placeholder="Your first name">
               </div>
+              <div class="w-1/2 ml-1">
+                <label class="block text-grey-darker text-sm font-bold mb-2" for="last_name">Last Name</label>
+                <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name"
+                  type="text" placeholder="Your last name">
+              </div>
+            </div>
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Phone Number</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email"
+                placeholder="Your email address">
+            </div>
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Email Address</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="phone" type="phone"
+                placeholder="Your phone number">
+            </div>
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="password">Password</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="password"
+                type="password" placeholder="Your secure password">
+              <p class="text-grey text-xs mt-1">At least 6 characters</p>
+            </div>
+            <div class="flex items-center justify-between mt-8">
+              <button class="bg-black hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full" type="submit">
+                Sign Up
+              </button>
             </div>
           </div>
         </div>
-        <!-- Content -->
-        <div class="w-full bg-grey-lightest" style="padding-top: 4rem;">
-          <div class="container mx-auto py-8">
-            <div class="w-5/6 lg:w-1/2 mx-auto bg-purple-500 rounded shadow">
-                  <div class="py-4 px-8 text-black text-xl border-b border-grey-lighter">Register for a free account</div>
-                  <div class="py-4 px-8">
-                      <div class="flex mb-4">
-                          <div class="w-1/2 mr-1">
-                              <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name">First Name</label>
-                              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="text" placeholder="Your first name">
-                          </div>
-                          <div class="w-1/2 ml-1">
-                              <label class="block text-grey-darker text-sm font-bold mb-2" for="last_name">Last Name</label>
-                              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="last_name" type="text" placeholder="Your last name">
-                          </div>
-                      </div>
-                      <div class="mb-4">
-                          <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Phone Number</label>
-                          <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="email" type="email" placeholder="Your email address">
-                      </div>
-                      <div class="mb-4">
-                        <label class="block text-grey-darker text-sm font-bold mb-2" for="email">Email Address</label>
-                        <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="phone" type="phone" placeholder="Your phone number">
-                    </div>
-                      <div class="mb-4">
-                          <label class="block text-grey-darker text-sm font-bold mb-2" for="password">Password</label>
-                          <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="password" type="password" placeholder="Your secure password">
-                          <p class="text-grey text-xs mt-1">At least 6 characters</p>
-                      </div>
-                      <div class="flex items-center justify-between mt-8">
-                          <button class="bg-black hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full" type="submit">
-                              Sign Up
-                          </button>
-                      </div>
-                  </div>
-              </div>
-              <p class="text-center my-4">
-                  <a href="" class="text-gray-400 text-sm no-underline hover:text-gray-900">I already have an account</a>
-              </p>
-          </div>
-        </div>
-        <!-- Footer -->
-        <footer class="w-full bg-grey-lighter py-8">
-          <div class="container mx-auto text-center px-8">
-              <p class="text-grey-dark mb-2 text-sm">Copyright of <span class="font-bold">Cranium Indonesia</span></p>
-          </div>
-        </footer>
+        <p class="text-center my-4">
+          <a href="" class="text-gray-400 text-sm no-underline hover:text-gray-900">I already have an account</a>
+        </p>
       </div>
-</form>
+    </div>
+    <!-- Footer -->
+    <footer class="w-full bg-grey-lighter py-8">
+      <div class="container mx-auto text-center px-8">
+        <p class="text-grey-dark mb-2 text-sm">Copyright of <span class="font-bold">Cranium Indonesia</span></p>
+      </div>
+    </footer>
+  </div>
+  </form>
 
 </body>
+
 </html>
