@@ -5,6 +5,6 @@
     "tailwindcss": "^3.0.19"
   },
   "scripts": {
-    "build-css": "npx tailwindcss -i ./build.css -o ./css/style.css --watch"
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   }
 }
