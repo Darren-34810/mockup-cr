@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Event Dashboard</title>
+        <!-- <script  src="https://cdn.tailwindcss.com"></script> -->
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+    <body class="bg-gray-50 min-h-screen">
+        <!-- Sidebar -->
+        <div class="bg-blue-400 w-48 h-full fixed top-0 left-0">
+            <a href="#" class="hover:bg-blue-500 shadow-md w-full block p-5 font-bold text-xl">
+                CRANIUM
+            </a>
+            <div class="bg-gray-500 py-6 h-full flex flex-col">
+                <a href="#" class="bg-red-400 hover:bg-red-400 p-3 mr-5 rounded-r-lg"> Overview</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Basic Setup</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Registration</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Schedule</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Venue</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ People</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Marketing</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Recording</a>
+                <a href="#" class="hover:bg-red-400 p-3 mr-5 rounded-r-lg">^ Analytics</a>
+            </div>
+        </div>
+        <!-- Main content -->  
+        <div class="bg-purple-400 ml-48 min-h-screen">
+            <div class="bg-pink-400 flex justify-between p-6">
+                <div class="flex">
+                    <p>Event Name</p>
+            </div>
+
+          <div class="block lg:hidden">
+            <button onClick={navToggle}
+              class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+              <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+    </div>
+    
+
+    <div class="w-full bg-grey-lightest" style="padding-top: 4rem;">
+      <div class="container mx-auto">
+        <div class="w-full bg-purple-500 rounded shadow">
+          <div class="py-4 px-8 text-black text-xl border-b border-grey-lighter">Input your Event Data</div>
+          <div class="py-4 px-8">
+            <div class="flex mb-4">
+              <div class="w-1/2 mr-1">
+                <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name">Event Name</label>
+                <input class="appearance-none border rounded w-3/4 h-4/5 py-2 px-3 text-grey-darker" id="first_name"
+                  type="text" placeholder="Your Event Name">
+              </div>
+              <div class="w-1/2 ml-1">
+                <label class="block text-grey-darker text-sm font-bold mb-2" for="last_name">Category</label>
+                <input class="appearance-none border rounded w-1/2 h-4/5 py-2 px-3 text-grey-darker" id="category"
+                  type="text" placeholder="">
+              </div>
+            </div>
+            <div class="mb-4 mt-8">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="description">Description</label>
+              <input class="appearance-none border rounded w-2/3 h-48 py-2 px-3 text-grey-darker" id="desc" type="desc"
+                placeholder="Description">
+            </div>
+            
+            <div class="flex items-center">
+            <div class="mb-4 mr-10">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="date">Start Date & Time</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="startdate" type="startdate"
+                placeholder="12-02-2021 12:00:00">
+            </div>
+            <p class="text-2xl font-bold mr-10">-</p>
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="date">End Date & Time</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="enddate"
+                type="enddate" placeholder="12-02-2021 12:00:00">
+            </div>
+          </div>
+
+          <div class="flex items-center">
+            <div class="mb-4 mr-10">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="date">Event Type</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="startdate" type="startdate"
+                placeholder="">
+            </div>
+            <div class="mb-4">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="date">Company Name</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="enddate"
+                type="enddate" placeholder="">
+            </div>
+          </div>
+
+            <div class="flex items-center justify-between mt-8">
+              <button class="bg-black hover:bg-blue-dark text-white font-bold py-2 px-4 rounded-full" type="submit">
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>
