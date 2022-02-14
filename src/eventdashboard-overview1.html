@@ -11,7 +11,7 @@
     <body class="bg-gray-50 min-h-screen">
               <!--Sidebar-->
       <div class="flex" >
-        <div class="flex flex-col w-64 h-screen px-3 py-8 overflow-y-auto bg-primary-600">
+        <div class="flex flex-col w-64 min-h-screen px-3 py-8 overflow-y-auto bg-primary-600">
             <h2 class="text-3xl font-bold text-center text-white">CRANIUM</h2>
     
             <div class="flex flex-col justify-between mt-6">
@@ -155,7 +155,7 @@
             </div>
           </div>
 
-          <div class="flex items-center">
+          <div class="flex items-center mb-6">
             <div class="mb-4 mr-10">
               <label class="block text-white text-sm font-bold mb-2" for="event_type">Event Type</label>
               <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="eventtype" type="eventtype"
@@ -169,6 +169,15 @@
             </div>
           </div>
 
+          <h1 class="text-white">Thumbnail</h1>
+          <div class="flex my-6">
+            <div class="mr-6 h-64 w-1/2 shadow-xl bg-gray-400 rounded-lg">
+                <label class="block text-white text-sm font-bold mb-2" for="choose_image">Choose Image</label>
+                </div>
+            <div class="ml-6 h-64 w-1/2 shadow-xl bg-gray-400 rounded-lg">
+                <label class="block text-white text-sm font-bold mb-2" for="choose_image">Choose Image</label>
+                </div>
+            </div>
             <div class="w-1/2 mr-1">
               <label class="block text-white text-sm font-bold mb-2" for="custom_link">Custom Link for Visitor</label>
               <input class="appearance-none border rounded w-3/4 py-4 px-4 text-grey-darker" id="custom_link"
