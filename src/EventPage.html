@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event</title>
+        <!-- <script  src="https://cdn.tailwindcss.com"></script> -->
+        <link href="/dist/output.css" rel="stylesheet">
+    </head>
+    <body>
+        <section id="header">
+            <div class="font-sans leading-normal tracking-normal">
+                <nav class="flex items-center justify-center flex-wrap bg-primary-700 p-3 w-full">
+                    <div class="m-4 flex items-center flex-shrink-0 text-white mr-6">
+                        <InertiaLink href="/" class="text-white no-underline hover:text-white hover:no-underline">
+                            <p class="text-2xl font-semibold">Cranium</p>
+                        </InertiaLink>
+                    </div>
+                    <div class="block lg:hidden">
+                        <button onClick={navToggle}
+                                class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+                            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="text-white w-full flex-grow lg:flex lg:items-center lg:w-auto hidden pt-6 lg:pt-0 ref={navContentRef}">
+                        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                            <li class="mr-6">
+                                <InertiaLink class="inline-block py-2 px-2 no-underline hover:text-blue-300">
+                                    Events
+                                </InertiaLink>
+                            </li>
+                            <li class="mr-6">
+                                <InertiaLink class="inline-block py-2 px-2 no-underline hover:text-blue-300">
+                                    Feature
+                                </InertiaLink>
+                            </li>
+                            <li class="mr-6">
+                                <InertiaLink class="inline-block py-2 px-2 no-underline hover:text-blue-300">
+                                    Account Plans
+                                </InertiaLink>
+                            </li>
+                            <InertiaLink href={route('register')} class="btn-secondary">Register</InertiaLink>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
+        <section id="Feature">
+            <div class="bg-primary-600">
+
+                    <div class="flex ml-auto justify-end mr-48">
+                        <div class="flex flex-col">
+                            <p class=" text-white text-xl mt-10">Filter by</p>
+                            <div class=" flex bg-white w-64 rounded-md my-6">
+                                <p class=" pl-2 pt-2 mr-36">This week</p>
+                                <div class="pt-1 text-right">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 " viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="py-4 text-2xl font-bold  text-center text-white">Events</h1>
+                    <p class="py-6 mb-4  text-center text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center">
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-100 rounded-lg m-4">
+                            <div class="h-64 w-64"></div>
+                            <div class="h-32 w-64 border-2 border-black rounded-b-lg bg-neutral-700 text-white">
+                                <p class="p-4 mb-4">Events #1</p>
+                                <p class="p-4"> See More..</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </body>
+</html>
