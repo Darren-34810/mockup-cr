@@ -123,126 +123,160 @@
         Event Name
     </div>
 
-    <div class="text-2xl w-full flex-grow lg:flex lg:items-center lg:w-auto hidden py-6" ref={navContentRef}>
-        <ul class="lg:flex ml-20">
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Attendance
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Team
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Speakers
-            </InertiaLink>
-        </ul>
-      </div>
+    
+      <div class="text-2xl w-full flex-grow lg:flex lg:items-center lg:w-auto hidden py-6" ref={navContentRef}>
+          <ul class="lg:flex ml-20">
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Attendance
+              </InertiaLink>
+            </li>
+            <li class="mx-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Team
+              </InertiaLink>
+            </li>
+            <li class="mx-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Speakers
+              </InertiaLink>
+          </ul>
+        </div>
+   
+      <!-- Baris sub Judul -->
+      <div class="flex-auto mx-10 my-auto absolute">
+        <div class="text-1xl w-9/12  mx-10 my-6" ref={navContentRef}>
+          <div class="absolute">
+          <ul class="lg:flex">
+            <li class="ml-10 mx-10">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">Name
+              </InertiaLink>
+            </li>
+            <li class="ml-32 mx-10">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
+              </InertiaLink>
+            </li>
+            <li class="ml-32 mx-10">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
+              </InertiaLink>
+          </ul>
+        </div>
+        </div>
+        <hr class="w-9/12 justify-center items-center">
 
-      <div class="text-1xl mx-10 my-6" ref={navContentRef}>
+      <!-- baris list 1-->
+      <div class="flex text-1xl my-2" ref={navContentRef} >
         <ul class="lg:flex">
-          <li class="">
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
+          <li class="mx-0">
+            <div class="flex flex-row w-1/5">
+              <input type="checkbox" class=" my-4 checked:bg-blue-500"/>
+              <div class="flex flex-row mx-10 ml-28">
+                <div class="mx-auto my-auto w-10 h-10 bg-slate-400 rounded-full"></div>
+                <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 my-auto no-underline hover:text-blue-300">Gilang Satria
+                </InertiaLink>
+              </div>
+              </div>
+          </li>
+          <li class="ml-14">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">VIP
             </InertiaLink>
           </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
-            </InertiaLink>
-        </ul>
-      </div>
-      <hr class="w-9/12 justify-center items-center">
-
-      <div class="flex text-1xl mx-10 my-6" ref={navContentRef}>
-        <ul class="lg:flex">
-          <li class="">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
-            </InertiaLink>
-        </ul>
-      </div>
-      <hr class="w-9/12 justify-center items-center">
-
-      <div class="text-1xl mx-10 my-6" ref={navContentRef}>
-        <ul class="lg:flex">
-          <li class="">
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
+          <li class="ml-32 mx-10 ">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Unapproved
             </InertiaLink>
         </ul>
       </div>
       <hr class="w-9/12 justify-center items-center">
 
-      <div class="text-1xl mx-10 my-6" ref={navContentRef}>
+      <!-- baris list 2-->
+      <div class="flex text-1xl my-2" ref={navContentRef} >
         <ul class="lg:flex">
-          <li class="">
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
+          <li class="mx-0">
+            <div class="flex flex-row w-1/5">
+              <input type="checkbox" class=" my-4 checked:bg-blue-500"/>
+              <div class="flex flex-row mx-10 ml-28">
+                <div class="mx-auto my-auto w-10 h-10 bg-slate-400 rounded-full"></div>
+                <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 my-auto no-underline hover:text-blue-300">Gilang Satria
+                </InertiaLink>
+              </div>
+              </div>
+          </li>
+          <li class="ml-14">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">VIP
             </InertiaLink>
           </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
+          <li class="ml-32 mx-10 ">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Unapproved
             </InertiaLink>
         </ul>
       </div>
       <hr class="w-9/12 justify-center items-center">
 
-      <div class="text-1xl mx-10 my-6" ref={navContentRef}>
+      <!-- baris list 3-->
+      <div class="flex text-1xl my-2" ref={navContentRef} >
         <ul class="lg:flex">
-          <li class="">
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
+          <li class="mx-0">
+            <div class="flex flex-row w-1/5">
+              <input type="checkbox" class=" my-4 checked:bg-blue-500"/>
+              <div class="flex flex-row mx-10 ml-28">
+                <div class="mx-auto my-auto w-10 h-10 bg-slate-400 rounded-full"></div>
+                <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 my-auto no-underline hover:text-blue-300">Gilang Satria
+                </InertiaLink>
+              </div>
+              </div>
+          </li>
+          <li class="ml-14">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">VIP
             </InertiaLink>
           </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
-            </InertiaLink>
-          </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
+          <li class="ml-32 mx-10 ">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Unapproved
             </InertiaLink>
         </ul>
       </div>
       <hr class="w-9/12 justify-center items-center">
 
-      <div class="text-1xl mx-10 my-6" ref={navContentRef}>
+
+      <!-- baris list 4-->
+      <div class="flex text-1xl my-2" ref={navContentRef} >
         <ul class="lg:flex">
-          <li class="">
-            <input type="checkbox" class=" checked:bg-blue-500"/>
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 no-underline hover:text-blue-300">Name
+          <li class="mx-0">
+            <div class="flex flex-row w-1/5">
+              <input type="checkbox" class=" my-4 checked:bg-blue-500"/>
+              <div class="flex flex-row mx-10 ml-28">
+                <div class="mx-auto my-auto w-10 h-10 bg-slate-400 rounded-full"></div>
+                <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 my-auto no-underline hover:text-blue-300">Gilang Satria
+                </InertiaLink>
+              </div>
+              </div>
+          </li>
+          <li class="ml-14">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">VIP
             </InertiaLink>
           </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Tier
+          <li class="ml-32 mx-10 ">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Unapproved
+            </InertiaLink>
+        </ul>
+      </div>
+      <hr class="w-9/12 justify-center items-center">
+
+      <!-- baris list 5-->
+      <div class="flex text-1xl my-2" ref={navContentRef} >
+        <ul class="lg:flex">
+          <li class="mx-0">
+            <div class="flex flex-row w-1/5">
+              <input type="checkbox" class=" my-4 checked:bg-blue-500"/>
+              <div class="flex flex-row mx-10 ml-28">
+                <div class="mx-auto my-auto w-10 h-10 bg-slate-400 rounded-full"></div>
+                <InertiaLink href="" class="text-white inline-block py-2 px-2 mx-16 my-auto no-underline hover:text-blue-300">Gilang Satria
+                </InertiaLink>
+              </div>
+              </div>
+          </li>
+          <li class="ml-14">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">VIP
             </InertiaLink>
           </li>
-          <li class="mx-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Status
+          <li class="ml-32 mx-10 ">
+            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">Unapproved
             </InertiaLink>
         </ul>
       </div>
