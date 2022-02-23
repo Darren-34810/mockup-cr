@@ -24,7 +24,11 @@
               abumonyet : '#5d5d5d',
               babu : '#3f3f3f',
               toska : '#52E2C0'
-
+            },
+            screens: {
+              'tablet': '640px',
+              'laptop': '1024px',
+              'desktop': '1280px'
             }
           },
         },
@@ -34,433 +38,479 @@
     <title>Document</title>
     <!-- <style type="text/tailwindcss">
         *{
-            border : 1px solid red;
+          border : 1px solid red;
          }
-    </style>      -->
-
+    </style>        -->
 </head>
+
 <body>
-    <nav class="bg-dewasa shadow-lg">
-		<div class="max-w-6xl mx-auto px-4">
-			<div class="flex justify-between">
-				<div class="flex space-x-7">
-                    <div>
-                        <a href="#" class="flex items-center py-4 px-2">
-                        <span class="font-semibold text-white text-lg">Cranium</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- bagian atas -->
-    <section class="flex flex-row bg-jandamuda">
-      
-       <div class="flex-auto ml-auto mt-0 w-96 h-80">
-        <div class="mx-4 my-5 h-56 shadow-xl bg-abumonyet rounded-lg stroke-white border-2">
-        <div class="ml-32 flex flex-row">
-          <div class="flex flex-col">
-         <a class="ml-1 mr-40 mt-3 text-2xl text-white font-bold">Event Name</a>
-         <a class="ml-1 text-sm text-white font-thin">123 people are registered</a>
-        </div>
-         <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current text-tosca mt-5 h-6 w-6" fill="none" viewBox="0 0 24 24"  >
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-        </svg>
-        </div>
-
-        <div class="flex-flex-row mt-2 ml-auto h-24">
-          <div class="ml-32 flex flex-row">
-            <div class="flex flex-col ml-4 " >
-              <div class="w-32 h-12 bg-babu stroke-white border-2 rounded-t-xl">
-              <p class="text-center text-sm text-white font-thin my-3">Start Time</p>
-              </div>
-              <div class="flex flex-row w-32 h-12 bg-babu stroke-white border-2 rounded-b-lg">
-                <p class="ml-2 text-center text-white text-sm font-thin my-3">12/1/22</p>
-                <p class="ml-10 text-center text-sm text-white font-thin my-3">12.00</p>
-                </div>
-                </div>
-                <div class="flex flex-col ">
-                  <div class="ml-2 w-32 h-12 bg-babu stroke-white border-2 rounded-t-lg">
-                  <p class="text-center text-sm text-white font-thin my-3">End Time</p>
+      <nav class="bg-dewasa shadow-lg">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between">
+          <div class="flex space-x-7">
+                      <div>
+                          <a href="#" class="flex items-center py-4 px-2">
+                          <span class="font-semibold text-white text-lg">Cranium</span>
+                          </a>
+                      </div>
                   </div>
-                  <div class="ml-2 flex flex-row w-32 h-12 bg-babu stroke-white border-2 rounded-b-lg">
-                    <p class="ml-2 text-center text-white text-sm font-thin my-3">12/1/22</p>
-                    <p class="ml-10 text-center text-white text-sm font-thin my-3">13.00</p>
-                    </div>
-                    </div>
               </div>
-            </div>
-            <div class="my-2 ml-32 w-80 h-7 bg-toska rounded-lg hover:bg-sky-500 hover:ring-sky-500">
-                <h3 class="text-center text-white font-medium">Joint Event</h3>
-            </div>
           </div>
-        </div>
-       </div>
+      </nav>
 
-       <div class=" flex-auto ml-auto mt-0 w-96 h-80">
-          <div class="mx-4 my-4 h-60 shadow-xl bg-white rounded-lg">
-            <p class="mx-auto my-auto justify-center">image</p>
-          </div>
-        </div>
-    </section> 
-
-    <!-- bagian deskripsi -->
-    <section class="flex flex-row  bg-jandamuda ">
-      <div class="ml-4 text-slate-50 font-normal">
-        <p class="font-extrabold">Description</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis minima delectus repellat quidem maiores voluptates dolorum autem officiis culpa.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore!</p>
-      </div>
-      <div class=" flex-auto ml-auto mt-0 w-96 h-64">
-        <div class="mx-4 my-auto w-40 h-52 shadow-sm bg-abumonyet rounded-lg">
-          <br>
-          <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full">
-          </div>
-          <p class="text-white text-center">
-            WPU
-          </p>
-          <p class="text-white text-center font-thin">
-            Company
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- bagian speaker -->
-    <div class=" mx-auto text-center px-8 bg-jandamuda">
-      <p class="text-slate-50 text-2xl h-11 font-bold ">Speaker</p>
-    </div>
-    <section class="flex flex-row justify-center bg-jandamuda">
-
-          <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-          <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+      <!-- bagian atas -->
+      <section class="flex flex-col md:flex-row bg-jandamuda">
+        
+        <div class="flex-auto ml-auto mt-0 w-96 h-80">
+          <div class="mx-4 my-5 h-56 lg:h-72 shadow-xl bg-abumonyet rounded-lg stroke-white border-2">
+          <div class="mx-auto flex flex-row">
+            <div class="flex flex-col">
+                <a class="mx-auto mt-3 text-2xl lg:text-6xl text-white font-bold">Event Name</a>
+                <a class="mx-auto lg:mx-4 text-sm lg:text-lg text-white font-thin">123 people are registered</a>
             </div>
-          </a>
+          <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current text-tosca mt-5 h-6 w-6 2xl:mx-auto 2xl:my-auto" fill="none" viewBox="0 0 24 24"  >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+          </svg>
+          </div>
 
-          <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-            <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-              <div class="ml-10 my-auto items-center space-x-3">
-                <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-              <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
-              </div>
-            </a>
-
-            <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-                <div class="ml-10 my-auto items-center space-x-3">
-                  <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-                <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+          <div class="flex-flex-row mt-2 ml-auto h-24">
+            <div class="flex flex-row">
+              <div class="flex flex-col ml-4 xl:ml-20 2xl:mx-auto" >
+                <div class="w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-t-xl">
+                <p class="text-center text-sm text-white font-thin my-3">Start Time</p>
                 </div>
-              </a>
-
-              <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-                  <div class="ml-10 my-auto items-center space-x-3">
-                    <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-                  <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+                <div class="flex flex-row w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-b-lg">
+                  <p class="ml-2 2xl:mx-auto text-center text-white text-sm font-thin my-3">12/1/22</p>
+                  <p class="ml-10 2xl:mx-auto text-center text-sm text-white font-thin my-3">12.00</p>
                   </div>
-                </a>
-          
-    </section>
-    <section class="flex flex-row justify-center  bg-jandamuda">
-
-      <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-          <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-            <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
-            </div>
-          </a>
-
-          <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-            <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-              <div class="ml-10 my-auto items-center space-x-3">
-                <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-              <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
-              </div>
-            </a>
-
-            <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-                <div class="ml-10 my-auto items-center space-x-3">
-                  <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-                <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+                  </div>
+                  <div class="flex flex-col xl:ml-2 2xl:mx-auto">
+                    <div class="ml-2 w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-t-lg">
+                    <p class="text-center text-sm text-white font-thin my-3">End Time</p>
+                    </div>
+                    <div class="ml-2 flex flex-row lg:w-44 2xl:w-80 w-32 lg:h-14 h-12 bg-babu stroke-white border-2 rounded-b-lg">
+                      <p class="ml-2 2xl:mx-auto text-center text-white text-sm font-thin my-3">12/1/22</p>
+                      <p class="ml-10 2xl:mx-auto text-center text-white text-sm font-thin my-3">13.00</p>
+                      </div>
+                      </div>
                 </div>
-              </a>
-
-              <a href="#" class="flex flex-row my-2 group max-w-xs mx-auto rounded-lg p-6 bg-gray-400 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
-                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full"></div>
-                  <div class="ml-10 my-auto items-center space-x-3">
-                    <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-                  <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
-                  </div>
-                </a>
-          
-    </section>
-
-  <!-- bagian Jadwal -->
-    <div class="mx-auto h-8  text-center px-8 bg-jandamuda">
-      <p class="text-slate-50 text-2xl font-bold">Schedule</p>
-    </div>
-
-      <div class="w-full flex-grow lg:flex lg:items-center bg-jandamuda lg:w-auto hidden py-6" ref={navContentRef}>
-        <ul class="list-reset lg:flex justify-center flex-1 items-center">
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">15 Januari
-            </InertiaLink>
-          </li>
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">16 Januari
-            </InertiaLink>
-          </li>
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">17 Januari
-            </InertiaLink>
-          </li>
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">18 Januari
-            </InertiaLink>
-          </li>
-          <li class="mr-6">
-            <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">19 Januari
-            </InertiaLink>
-          </li>
-        </ul>
-      </div>
-      
-
-    <section class="flex flex-col  bg-jandamuda">
-
-      <!-- Scheduling part 1 -->
-      <div class="mx-auto  my-4 w-2/3 h-40 shadow-xl bg-gray-500 rounded-lg">
-      <div class="flex flex-row">
-        <div class="flex flex-col mx-9 my-12 w-1/2">
-          <div class="flex flex-row text-white text-lg">
-            <p>7.00 AM - 8.00 AM</p>
-            <div class="mx-6">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-            </svg>
-          </div>
-          </div>
-          <div class="flex flex-row text-gray-400">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg>
-            <p>Sessions</p>
-          </div>
-        </div>
-
-        <div class="flex flex-col mx-9 my-auto w-1/2">
-          <div class="text-xl text-white">
-             <p>Event Title</p>
-          </div>
-          <div class="text-sm text-white">
-            <p>Event Detail</p>
-         </div>
-         <div class="flex flex-row my-4">
-         <div class="flex flex-row mx-2  group w-40 ">
-          <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-          <div class="ml-10 my-auto items-center space-x-3">
-            <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-          <p class="text-white text-sm">Speaker</p>
-          </div>
-         </div>
-         <div class="flex flex-row mx-2  group w-40 ">
-          <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-          <div class="ml-10 my-auto items-center space-x-3">
-            <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
-          <p class="text-white text-sm">Speaker</p>
-          </div>
-        </div>
-         </div>
-        </div>
-      </div>
-      </div>
-
-       <!-- Scheduling part 2 -->
-       <div class="mx-auto  my-4 w-2/3 h-40 shadow-xl bg-gray-500 rounded-lg">
-        <div class="flex flex-row">
-          <div class="flex flex-col mx-9 my-12 w-1/2">
-            <div class="flex flex-row text-white text-lg">
-              <p>7.00 AM - 8.00 AM</p>
-              <div class="mx-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            </div>
-            <div class="flex flex-row text-gray-400">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-              <p>Sessions</p>
-            </div>
-          </div>
-  
-          <div class="flex flex-col mx-9 my-auto w-1/2">
-            <div class="text-xl text-white">
-               <p>Event Title</p>
-            </div>
-            <div class="text-sm text-white">
-              <p>Event Detail</p>
-           </div>
-           <div class="flex flex-row my-4">
-           <div class="flex flex-row mx-2  group w-40 ">
-            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-            <p class="text-white text-sm">Speaker</p>
-            </div>
-           </div>
-           <div class="flex flex-row mx-2  group w-40 ">
-            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
-            <p class="text-white text-sm">Speaker</p>
-            </div>
-          </div>
-           </div>
-          </div>
-        </div>
-        </div>
-
-         <!-- Scheduling part 3 -->
-      <div class="mx-auto  my-4 w-2/3 h-40 shadow-xl bg-gray-500 rounded-lg">
-        <div class="flex flex-row">
-          <div class="flex flex-col mx-9 my-12 w-1/2">
-            <div class="flex flex-row text-white text-lg">
-              <p>7.00 AM - 8.00 AM</p>
-              <div class="mx-6">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-              </svg>
-            </div>
-            </div>
-            <div class="flex flex-row text-gray-400">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-              </svg>
-              <p>Sessions</p>
-            </div>
-          </div>
-  
-          <div class="flex flex-col mx-9 my-auto w-1/2">
-            <div class="text-xl text-white">
-               <p>Event Title</p>
-            </div>
-            <div class="text-sm text-white">
-              <p>Event Detail</p>
-           </div>
-           <div class="flex flex-row my-4">
-           <div class="flex flex-row mx-2  group w-40 ">
-            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
-            <p class="text-white text-sm">Speaker</p>
-            </div>
-           </div>
-           <div class="flex flex-row mx-2  group w-40 ">
-            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-            <div class="ml-10 my-auto items-center space-x-3">
-              <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
-            <p class="text-white text-sm">Speaker</p>
-            </div>
-          </div>
-           </div>
-          </div>
-        </div>
-        </div>
-
-      
-
-    
-    <!-- bagian booth -->
-    <section class="flex flex-col bg-jandamuda">
-      <div class="mx-auto text-center px-8 bg-jandamuda">
-        <p class="text-slate-50 text-2xl font-bold">Booths</p>
-      </div>
-      <div class="flex flex-row mx-auto  my-4 w-2/3 h-44 shadow-xl bg-gray-500 rounded-lg">
-        <div class="mx-10 flex flex-col">
-          <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-          </div>
-          <div class="my-3">
-            <h2 class="text-xl text-white font-bold">Booths</h2>
-            <p class="text-sm text-white">Booths Details</p>
-          </div>
-        </div>
-        <div class="mx-52 my-16 text-5xl text-white font-bold justify-center">
-          <h1>Booths Banner</h1>
-        </div>
-      </div>
-    </section>
-    <!-- bagian Booths 2 -->
-      <section class="flex flex-row  justify-center bg-jandamuda">
-          <div class="flex flex-row w-2/3">
-          <div class="flex flex-row mx-auto  my-4 w-3/6 h-44 shadow-xl bg-gray-500 rounded-lg">
-            <div class="mx-10 flex flex-col">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
               </div>
-              <div class="my-3">
-                <h2 class="text-xl text-white font-bold">Booths</h2>
-                <p class="text-sm text-white">Booths Details</p>
-              </div>
-            </div>
-            <div class="my-16 text-2xl text-white font-bold justify-center">
-              <h1>Booths Banner</h1>
-            </div>
-          </div>
-          
-          <div class="flex flex-row mx-auto  my-4 w-3/12 h-44 shadow-xl bg-gray-500 rounded-lg">
-            <div class="mx-10 flex flex-col">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-              </div>
-              <div class="my-3">
-                <h2 class="text-xl text-white font-bold">Booths</h2>
-                <p class="text-sm text-white">Booths Details</p>
+              <div class="my-2 lg:my-8 mx-auto w-80 h-7 bg-toska rounded-lg hover:bg-sky-500 hover:ring-sky-500">
+                  <h3 class="text-center text-white font-medium">Joint Event</h3>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="flex flex-row mx-auto  my-4 w-1/6 h-44 shadow-xl bg-gray-500 rounded-lg">
-            <div class="mx-10 flex flex-col">
-              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-              </div>
-              <div class="my-3">
-                <h2 class="text-xl text-white font-bold">Booths</h2>
-                <p class="text-sm text-white">Booths Details</p>
-              </div>
+        <div class=" flex-auto ml-auto mt-0 w-96 h-80">
+            <div class="mx-4 my-4 h-60 lg:h-72 shadow-xl bg-white rounded-lg">
+              <p class="mx-auto my-auto justify-center">image</p>
             </div>
+          </div>
+      </section> 
+
+      <!-- bagian deskripsi -->
+      <section class="flex flex-row  bg-jandamuda ">
+        <div class="ml-4 text-slate-50 font-normal">
+          <p class="font-extrabold">Description</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis minima delectus repellat quidem maiores voluptates dolorum autem officiis culpa.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore!</p>
+        </div>
+        <div class=" flex-auto ml-auto mt-0 w-96 h-64">
+          <div class="mx-4 lg:mx-auto my-auto w-40 h-52 shadow-sm bg-abumonyet rounded-lg">
+            <br>
+            <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full">
+            </div>
+            <p class="text-white text-center">
+              WPU
+            </p>
+            <p class="text-white text-center font-thin">
+              Company
+            </p>
           </div>
         </div>
       </section>
 
-    <!-- Sponsor -->
-    <section class="flex flex-col bg-jandamuda">
-      <div class="mx-auto text-center px-8 bg-jandamuda">
-        <p class="text-slate-50 text-2xl font-mono ">Event Sponsor</p>
-      </div>
-      <div class="flex flex-row mx-auto  my-4 w-5/12 h-24">
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
-        <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+      <!-- bagian speaker -->
+      <div class=" mx-auto text-center px-8 bg-jandamuda">
+        <p class="text-slate-50 text-2xl h-11 font-bold ">Speaker</p>
       </div>
 
-    </section>
-    <!-- batas Footer -->
-    <section>
-      <footer class="w-full bg-dewasa py-8">
-        <div class="container mx-auto text-center px-8">
-            <p class="text-white mb-2 text-sm">Copyright of <span class="font-bold">Cranium Indonesia</span></p>
+      <section class="flex flex-row justify-center bg-jandamuda">
+      <div class="container flex flex-col md:flex-row">
+
+            <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+              <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+              <div class="ml-10 my-auto items-center space-x-3">
+              <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+            </div>
+              </a>
+
+            <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+              <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+              <div class="ml-10 my-auto items-center space-x-3">
+              <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+            </div>
+              </a>
+
+              <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+                <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+                <div class="ml-10 my-auto items-center space-x-3">
+                <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+              <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+              </div>
+                </a>
+
+                <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+                  <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+                  <div class="ml-10 my-auto items-center space-x-3">
+                  <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+                <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+                </div>
+                  </a>
+
+            
+      </section>
+      <section class="flex flex-row justify-center  bg-jandamuda">
+
+      <div class="container flex flex-col md:flex-row">
+
+        <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+          <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+          <div class="ml-10 my-auto items-center space-x-3">
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+        <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
         </div>
-      </footer>
-    </section>
-</body>
+          </a>
+
+        <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+          <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+          <div class="ml-10 my-auto items-center space-x-3">
+          <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+        <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+        </div>
+          </a>
+
+          <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+            <div class="ml-10 my-auto items-center space-x-3">
+            <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+          <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+          </div>
+            </a>
+
+            <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
+              <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+              <div class="ml-10 my-auto items-center space-x-3">
+              <h3 class="text-slate-900 group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+            <p class="text-slate-500 group-hover:text-white text-sm">Speaker</p>
+            </div>
+              </a>
+      </section>
+
+    <!-- bagian Jadwal -->
+      <div class="mx-auto h-8  text-center px-8 bg-jandamuda">
+        <p class="text-slate-50 text-2xl font-bold">Schedule</p>
+      </div>
+
+        <div class="w-full flex-grow lg:flex lg:items-center bg-jandamuda lg:w-auto hidden py-6" ref={navContentRef}>
+          <ul class="list-reset lg:flex justify-center flex-1 items-center">
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">15 Januari
+              </InertiaLink>
+            </li>
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2  no-underline hover:text-blue-300">16 Januari
+              </InertiaLink>
+            </li>
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">17 Januari
+              </InertiaLink>
+            </li>
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">18 Januari
+              </InertiaLink>
+            </li>
+            <li class="mr-6">
+              <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">19 Januari
+              </InertiaLink>
+            </li>
+          </ul>
+        </div>
+        
+
+      <section class="flex flex-col  bg-jandamuda">
+
+        <!-- Scheduling part 1 -->
+        <div class="mx-auto  my-4 h-auto lg:w-11/12 shadow-xl bg-gray-500 rounded-lg">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex flex-col mx-auto md:mx-9 my-2 md:my-12 w-1/2">
+            <div class="flex flex-row text-white text-sm md:text-lg">
+              <p>7.00 AM - 8.00 AM</p>
+              <div class="mx-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            </div>
+            <div class="flex flex-row text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <p>Sessions</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col mx-auto md:mx-9 w-1/2">
+            <div class="text-xl text-white">
+              <p>Event Title</p>
+            </div>
+            <div class="text-sm text-white">
+              <p>Event Detail</p>
+          </div>
+          <div class="flex flex-col md:flex-row my-4">
+          <div class="flex flex-row  my-2 group w-fit md:mx-2 md:w-40">
+            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+            <div class="my-auto items-center space-x-3">
+              <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+            <p class="text-white text-sm">Speaker</p>
+            </div>
+          </div>
+          <div class="flex flex-row  group w-fit md:mx-2 md:w-40">
+            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+            <div class="my-auto items-center space-x-3">
+              <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
+            <p class="text-white text-sm">Speaker</p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- Scheduling part 2 -->
+        <div class="mx-auto  my-4 h-auto lg:w-11/12 shadow-xl bg-gray-500 rounded-lg">
+          <div class="flex flex-col md:flex-row">
+            <div class="flex flex-col mx-auto md:mx-9 my-2 md:my-12 w-1/2">
+              <div class="flex flex-row text-white text-sm md:text-lg">
+                <p>7.00 AM - 8.00 AM</p>
+                <div class="mx-6">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              </div>
+              <div class="flex flex-row text-gray-400">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <p>Sessions</p>
+              </div>
+            </div>
+  
+            <div class="flex flex-col mx-auto md:mx-9 w-1/2">
+              <div class="text-xl text-white">
+                <p>Event Title</p>
+              </div>
+              <div class="text-sm text-white">
+                <p>Event Detail</p>
+            </div>
+            <div class="flex flex-col md:flex-row my-4">
+            <div class="flex flex-row  my-2 group w-fit md:mx-2 md:w-40">
+              <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+              <div class="my-auto items-center space-x-3">
+                <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+              <p class="text-white text-sm">Speaker</p>
+              </div>
+            </div>
+            <div class="flex flex-row  group w-fit md:mx-2 md:w-40">
+              <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+              <div class="my-auto items-center space-x-3">
+                <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
+              <p class="text-white text-sm">Speaker</p>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        
+
+      <!-- Scheduling part 3 -->
+      <div class="mx-auto  my-4 h-auto lg:w-11/12 shadow-xl bg-gray-500 rounded-lg">
+        <div class="flex flex-col md:flex-row">
+          <div class="flex flex-col mx-auto md:mx-9 my-2 md:my-12 w-1/2">
+            <div class="flex flex-row text-white text-sm md:text-lg">
+              <p>7.00 AM - 8.00 AM</p>
+              <div class="mx-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            </div>
+            <div class="flex flex-row text-gray-400">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+              </svg>
+              <p>Sessions</p>
+            </div>
+          </div>
+
+          <div class="flex flex-col mx-auto md:mx-9 w-1/2">
+            <div class="text-xl text-white">
+              <p>Event Title</p>
+            </div>
+            <div class="text-sm text-white">
+              <p>Event Detail</p>
+          </div>
+          <div class="flex flex-col md:flex-row my-4">
+          <div class="flex flex-row my-2 group w-fit md:mx-2 md:w-40">
+            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+            <div class="my-auto items-center space-x-3">
+              <h3 class="text-white group-hover:text-white text-sm font-semibold">Bill Gates</h3>
+            <p class="text-white text-sm">Speaker</p>
+            </div>
+          </div>
+          <div class="flex flex-row  group w-fit md:mx-2 md:w-40">
+            <div class="mx-auto my-auto  w-14 h-14 bg-slate-400 rounded-full"></div>
+            <div class="my-auto items-center space-x-3">
+              <h3 class="text-white group-hover:text-white text-sm font-semibold">Alan Cok</h3>
+            <p class="text-white text-sm">Speaker</p>
+            </div>
+          </div>
+          </div>
+          </div>
+        </div>
+        </div>
+      
+      <!-- bagian booth -->
+      <section class="flex flex-col bg-jandamuda">
+        <div class="mx-auto text-center px-8 bg-jandamuda">
+          <p class="text-slate-50 text-2xl font-bold">Booths</p>
+        </div>
+        
+        <div class="flex flex-row mx-auto  my-4 w-11/12 h-44 shadow-xl bg-gray-500 rounded-lg">
+          <div class="mx-10 flex flex-col">
+            <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+            </div>
+            <div class="my-3">
+              <h2 class="text-xl text-white font-bold">Booths</h2>
+              <p class="text-sm text-white">Booths Details</p>
+            </div>
+          </div>
+          <div class="text-2xl my-auto text-white font-bold justify-center">
+            <h1>Booths Banner</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- bagian Booths 2 -->
+        <section class="flex-row md:flex md:gap-4 lg:min-w-max justify-center bg-jandamuda">
+
+          <div class="my-4 mx-4 md:mx-auto md:flex-initial lg:w-2/4  h-44 bg-gray-500 rounded-lg">
+            <div class="flex flex-row">
+            <div class="mx-10 flex flex-col">
+              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+              </div>
+              <div class="my-3">
+                <h2 class="text-xl text-white font-bold">Booths</h2>
+                <p class="text-sm text-white">Booths Details</p>
+              </div>
+            </div>
+            <div class="text-2xl my-auto mx-auto text-white font-bold justify-center">
+              <h1>Booths Banner</h1>
+            </div>
+          </div>
+          </div>
+ 
+          <div class="my-4 mx-4 md:mx-auto md:flex-initial bg-gray-500 h-44 lg:w-1/5 rounded-lg">
+            <div class="mx-10 my-2 flex flex-col">
+              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+              </div>
+              <div class="my-3">
+                <h2 class="text-xl text-white font-bold">Booths</h2>
+                <p class="text-sm text-white">Booths Details</p>
+              </div>
+          </div>
+          </div>
+
+          <div class="my-4 mx-4 md:mx-auto md:flex-initial bg-gray-500 h-44 lg:w-1/5 rounded-lg">
+            <div class="mx-10 my-2 flex flex-col">
+              <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+              </div>
+              <div class="my-3">
+                <h2 class="text-xl text-white font-bold">Booths</h2>
+                <p class="text-sm text-white">Booths Details</p>
+              </div>
+          </div>
+          </div>
+       
+
+          
+
+            <!-- <div class="mx-auto flex flex-initial ">
+            <div class="flex flex-row mx-auto  my-4 w-3/6 h-44 shadow-xl bg-gray-500 rounded-lg">
+              <div class="mx-10 flex flex-col">
+                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+                </div>
+                <div class="my-3">
+                  <h2 class="text-xl text-white font-bold">Booths</h2>
+                  <p class="text-sm text-white">Booths Details</p>
+                </div>
+              </div>
+              <div class="my-16 text-2xl text-white font-bold justify-center">
+                <h1>Booths Banner</h1>
+              </div>
+            </div>
+            
+            <div class="mx-auto flex flex-initial  my-4  h-44 shadow-xl bg-gray-500 rounded-lg">
+              <div class="mx-10 flex flex-col">
+                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+                </div>
+                <div class="my-3">
+                  <h2 class="text-xl text-white font-bold">Booths</h2>
+                  <p class="text-sm text-white">Booths Details</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-initial mx-auto  my-4  h-44 shadow-xl bg-gray-500 rounded-lg">
+              <div class="mx-10 flex flex-col">
+                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
+                </div>
+                <div class="my-3">
+                  <h2 class="text-xl text-white font-bold">Booths</h2>
+                  <p class="text-sm text-white">Booths Details</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </section> 
+
+      <!-- Sponsor -->
+      <section class="flex flex-col bg-jandamuda">
+        <div class="mx-auto text-center px-8 bg-jandamuda">
+          <p class="text-slate-50 text-2xl font-mono ">Event Sponsor</p>
+        </div>
+        <div class="flex flex-col md:flex-row mx-auto md:gap-x-4 my-4 w-max h-auto">
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+          <div class="w-20 h-20 mx-auto my-auto md:w-14 md:h-14 bg-slate-400 rounded-full"></div>
+        </div>
+      </section>
+
+      <!-- batas Footer -->
+      <section>
+        <footer class="w-full bg-dewasa py-8">
+          <div class="container mx-auto text-center px-8">
+              <p class="text-white mb-2 text-sm">Copyright of <span class="font-bold">Cranium Indonesia</span></p>
+          </div>
+        </footer>
+      </section>
+ </body>
 </html>
