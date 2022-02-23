@@ -85,13 +85,13 @@
             <div class="w-full bg-grey-lightest">
                 <div class="container mx-auto">
                     <div class="py-4 px-8">
-                        <div class="flex mb-4">
-                            <div class="w-1/2 mr-1">
+                        <div class="flex flex-col md:flex-row mb-4">
+                            <div class="sm:w-1/2 sm:mr-1">
                                 <label class="block text-white text-sm font-bold mb-2" for="first_name">First Name</label>
                                 <input class="appearance-none border rounded w-3/4 h-4/5 py-2 px-3 text-grey-darker" id="first_name"
                                        type="text" placeholder="Your Event Name">
                             </div>
-                            <div class="w-1/2 ml-1">
+                            <div class="sm:w-1/2 sm:ml-1">
                                 <label class="block text-white text-sm font-bold mb-2" for="last_name">Last Name</label>
                                 <input class="appearance-none border rounded w-1/2 h-4/5 py-2 px-3 text-grey-darker" id="category"
                                        type="text" placeholder="">
@@ -103,40 +103,40 @@
                                    placeholder="Description">
                         </div>
 
-                        <div class="flex items-center">
-                            <div class="mb-4 mr-10">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="mb-4 md:mr-10">
                                 <label class="block text-white text-sm font-bold mb-2" for="start_date">Email</label>
-                                <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="startdate" type="startdate"
+                                <input class="appearance-none border rounded h-16 text-grey-darker" id="startdate" type="startdate"
                                        placeholder="12-02-2021 12:00:00">
                             </div>
-                            <p class="text-2xl font-bold mr-10">-</p>
-                            <div class="mb-4">
+                            <p class="text-2xl my-auto mx-4 font-bold">-</p>
+                            <div class="mb-4 md:mr-10">
                                 <label class="block text-white text-sm font-bold mb-2" for="end_date">Phone Number</label>
-                                <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="enddate"
+                                <input class="appearance-none border rounded h-16 text-grey-darker" id="enddate"
                                        type="enddate" placeholder="12-02-2021 12:00:00">
                             </div>
                         </div>
 
-                        <div class="flex items-center">
-                            <div class="mb-4 mr-10">
+                        <div class="flex flex-col md:flex-row">
+                            <div class="mb-4 md:mr-10">
                                 <label class="block text-white text-sm font-bold mb-2" for="event_type">Company</label>
                                 <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="eventtype" type="eventtype"
                                        placeholder="">
                             </div>
-                            <p class="text-2xl font-bold mr-10">-</p>
-                            <div class="mb-4">
+                            <p class="text-2xl my-auto mx-4 font-bold">-</p>
+                            <div class="mb-4 md:mr-10">
                                 <label class="block text-white text-sm font-bold mb-2" for="company_name">Position in Company</label>
                                 <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="companyname"
                                        type="companyname" placeholder="Your Company Name">
                             </div>
                         </div>
 
-                        <div class="flex-row items-center mt-2 space-x-8">
-                            <button class="bg-white hover:bg-green-600 text-black font-bold py-2 px-4 rounded-none w-36" type="submit">
+                        <div class="flex flex-col md:flex-row mt-2 items-center md:gap-x-8">
+                            <button class="my-auto  bg-white hover:bg-green-600 text-black font-bold py-2 md:px-4 rounded-none w-36" type="submit">
                                 Save
                             </button>
 
-                            <button class="bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded w-48" type="submit">
+                            <button class=" my-4 mx-4 bg-transparent hover:bg-blue-500 text-blue-500 font-semibold hover:text-white py-2 md:px-4 border border-blue-500 hover:border-transparent rounded w-48" type="submit">
                                 Change Password
                             </button>
 
