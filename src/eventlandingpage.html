@@ -7,34 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;600;700;900&display=swap" rel="stylesheet">
-    <script  src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            spacing: {
-              13: '3.25rem'
-            },
-            fontFamily: {
-              inter: ['Inter']
-            },
-            colors: {
-              jandamuda : '#392c4f',
-              dewasa : '#302542',
-              abumonyet : '#5d5d5d',
-              babu : '#3f3f3f',
-              toska : '#52E2C0'
-            },
-            screens: {
-              'tablet': '640px',
-              'laptop': '1024px',
-              'desktop': '1280px'
-            }
-          },
-        },
-      };
-    </script>
-
+    <link href="/dist/output.css" rel="stylesheet">
+    
     <title>Document</title>
     <!-- <style type="text/tailwindcss">
         *{
@@ -44,7 +18,7 @@
 </head>
 
 <body>
-      <nav class="bg-dewasa shadow-lg">
+      <nav class="bg-primary-600 shadow-lg">
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex justify-between">
           <div class="flex space-x-7">
@@ -59,10 +33,10 @@
       </nav>
 
       <!-- bagian atas -->
-      <section class="flex flex-col md:flex-row bg-jandamuda">
+      <section class="flex flex-col md:flex-row bg-primary-500">
         
         <div class="flex-auto ml-auto mt-0 w-96 h-80">
-          <div class="mx-4 my-5 h-56 lg:h-72 shadow-xl bg-abumonyet rounded-lg stroke-white border-2">
+          <div class="mx-4 my-5 h-56 lg:h-72 shadow-xl bg-neutral-700 rounded-lg stroke-white border-2">
           <div class="mx-auto flex flex-row">
             <div class="flex flex-col">
                 <a class="mx-auto mt-3 text-2xl lg:text-6xl text-white font-bold">Event Name</a>
@@ -76,26 +50,26 @@
           <div class="flex-flex-row mt-2 ml-auto h-24">
             <div class="flex flex-row">
               <div class="flex flex-col ml-4 xl:ml-20 2xl:mx-auto" >
-                <div class="w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-t-xl">
+                <div class="w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-neutral-800 stroke-white border-2 rounded-t-xl">
                 <p class="text-center text-sm text-white font-thin my-3">Start Time</p>
                 </div>
-                <div class="flex flex-row w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-b-lg">
+                <div class="flex flex-row w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-neutral-800 stroke-white border-2 rounded-b-lg">
                   <p class="ml-2 2xl:mx-auto text-center text-white text-sm font-thin my-3">12/1/22</p>
                   <p class="ml-10 2xl:mx-auto text-center text-sm text-white font-thin my-3">12.00</p>
                   </div>
                   </div>
                   <div class="flex flex-col xl:ml-2 2xl:mx-auto">
-                    <div class="ml-2 w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-babu stroke-white border-2 rounded-t-lg">
+                    <div class="ml-2 w-32 lg:w-44 2xl:w-80 h-12 lg:h-14 bg-neutral-800 stroke-white border-2 rounded-t-lg">
                     <p class="text-center text-sm text-white font-thin my-3">End Time</p>
                     </div>
-                    <div class="ml-2 flex flex-row lg:w-44 2xl:w-80 w-32 lg:h-14 h-12 bg-babu stroke-white border-2 rounded-b-lg">
+                    <div class="ml-2 flex flex-row lg:w-44 2xl:w-80 w-32 lg:h-14 h-12 bg-neutral-800 stroke-white border-2 rounded-b-lg">
                       <p class="ml-2 2xl:mx-auto text-center text-white text-sm font-thin my-3">12/1/22</p>
                       <p class="ml-10 2xl:mx-auto text-center text-white text-sm font-thin my-3">13.00</p>
                       </div>
                       </div>
                 </div>
               </div>
-              <div class="my-2 lg:my-8 mx-auto w-80 h-7 bg-toska rounded-lg hover:bg-sky-500 hover:ring-sky-500">
+              <div class="my-2 lg:my-8 mx-auto w-80 h-7 bg-emerald-300 rounded-lg hover:bg-sky-500 hover:ring-sky-500">
                   <h3 class="text-center text-white font-medium">Joint Event</h3>
               </div>
             </div>
@@ -110,14 +84,14 @@
       </section> 
 
       <!-- bagian deskripsi -->
-      <section class="flex flex-row  bg-jandamuda ">
+      <section class="flex flex-row  bg-primary-500">
         <div class="ml-4 text-slate-50 font-normal">
           <p class="font-extrabold">Description</p>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis debitis minima delectus repellat quidem maiores voluptates dolorum autem officiis culpa.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, dolore!</p>
         </div>
         <div class=" flex-auto ml-auto mt-0 w-96 h-64">
-          <div class="mx-4 lg:mx-auto my-auto w-40 h-52 shadow-sm bg-abumonyet rounded-lg">
+          <div class="mx-4 lg:mx-auto my-auto w-40 h-52 shadow-sm bg-neutral-700 rounded-lg">
             <br>
             <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-full">
             </div>
@@ -132,11 +106,11 @@
       </section>
 
       <!-- bagian speaker -->
-      <div class=" mx-auto text-center px-8 bg-jandamuda">
+      <div class=" mx-auto text-center px-8 bg-primary-500">
         <p class="text-slate-50 text-2xl h-11 font-bold ">Speaker</p>
       </div>
 
-      <section class="flex flex-row justify-center bg-jandamuda">
+      <section class="flex flex-row justify-center bg-primary-500">
       <div class="container flex flex-col md:flex-row">
 
             <a href="#" class="flex flex-row my-2 h-24 group w-fit mx-auto rounded-lg p-2 bg-gray-400 ring-slate-900/5 shadow-lg hover:bg-sky-500 hover:ring-sky-500 border-2 border-white">
@@ -173,7 +147,7 @@
 
             
       </section>
-      <section class="flex flex-row justify-center  bg-jandamuda">
+      <section class="flex flex-row justify-center bg-primary-500">
 
       <div class="container flex flex-col md:flex-row">
 
@@ -211,11 +185,11 @@
       </section>
 
     <!-- bagian Jadwal -->
-      <div class="mx-auto h-8  text-center px-8 bg-jandamuda">
+      <div class="mx-auto h-8  text-center px-8 bg-primary-500">
         <p class="text-slate-50 text-2xl font-bold">Schedule</p>
       </div>
 
-        <div class="w-full flex-grow lg:flex lg:items-center bg-jandamuda lg:w-auto hidden py-6" ref={navContentRef}>
+        <div class="w-full flex-grow lg:flex lg:items-center bg-primary-500 lg:w-auto hidden py-6" ref={navContentRef}>
           <ul class="list-reset lg:flex justify-center flex-1 items-center">
             <li class="mr-6">
               <InertiaLink href="" class="text-white inline-block py-2 px-2 no-underline hover:text-blue-300">15 Januari
@@ -241,7 +215,7 @@
         </div>
         
 
-      <section class="flex flex-col  bg-jandamuda">
+      <section class="flex flex-col  bg-primary-500">
 
         <!-- Scheduling part 1 -->
         <div class="mx-auto  my-4 h-auto lg:w-11/12 shadow-xl bg-gray-500 rounded-lg">
@@ -386,8 +360,8 @@
         </div>
       
       <!-- bagian booth -->
-      <section class="flex flex-col bg-jandamuda">
-        <div class="mx-auto text-center px-8 bg-jandamuda">
+      <section class="flex flex-col bg-primary-500">
+        <div class="mx-auto text-center px-8 bg-primary-500">
           <p class="text-slate-50 text-2xl font-bold">Booths</p>
         </div>
         
@@ -407,7 +381,7 @@
       </section>
 
       <!-- bagian Booths 2 -->
-        <section class="flex-row md:flex md:gap-4 lg:min-w-max justify-center bg-jandamuda">
+        <section class="flex-row md:flex md:gap-4 lg:min-w-max justify-center bg-primary-500">
 
           <div class="my-4 mx-4 md:mx-auto md:flex-initial lg:w-2/4  h-44 bg-gray-500 rounded-lg">
             <div class="flex flex-row">
@@ -447,51 +421,11 @@
           </div>
           </div>
        
-
-          
-
-            <!-- <div class="mx-auto flex flex-initial ">
-            <div class="flex flex-row mx-auto  my-4 w-3/6 h-44 shadow-xl bg-gray-500 rounded-lg">
-              <div class="mx-10 flex flex-col">
-                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-                </div>
-                <div class="my-3">
-                  <h2 class="text-xl text-white font-bold">Booths</h2>
-                  <p class="text-sm text-white">Booths Details</p>
-                </div>
-              </div>
-              <div class="my-16 text-2xl text-white font-bold justify-center">
-                <h1>Booths Banner</h1>
-              </div>
-            </div>
-            
-            <div class="mx-auto flex flex-initial  my-4  h-44 shadow-xl bg-gray-500 rounded-lg">
-              <div class="mx-10 flex flex-col">
-                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-                </div>
-                <div class="my-3">
-                  <h2 class="text-xl text-white font-bold">Booths</h2>
-                  <p class="text-sm text-white">Booths Details</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-initial mx-auto  my-4  h-44 shadow-xl bg-gray-500 rounded-lg">
-              <div class="mx-10 flex flex-col">
-                <div class="mx-auto my-auto  w-20 h-20 bg-slate-400 rounded-lg">
-                </div>
-                <div class="my-3">
-                  <h2 class="text-xl text-white font-bold">Booths</h2>
-                  <p class="text-sm text-white">Booths Details</p>
-                </div>
-              </div>
-            </div>
-          </div> -->
         </section> 
 
       <!-- Sponsor -->
-      <section class="flex flex-col bg-jandamuda">
-        <div class="mx-auto text-center px-8 bg-jandamuda">
+      <section class="flex flex-col bg-primary-500">
+        <div class="mx-auto text-center px-8 bg-primary-500">
           <p class="text-slate-50 text-2xl font-mono ">Event Sponsor</p>
         </div>
         <div class="flex flex-col md:flex-row mx-auto md:gap-x-4 my-4 w-max h-auto">
@@ -506,11 +440,12 @@
 
       <!-- batas Footer -->
       <section>
-        <footer class="w-full bg-dewasa py-8">
+        <footer class="w-full bg-primary-600 py-8">
           <div class="container mx-auto text-center px-8">
               <p class="text-white mb-2 text-sm">Copyright of <span class="font-bold">Cranium Indonesia</span></p>
           </div>
         </footer>
       </section>
+
  </body>
 </html>
