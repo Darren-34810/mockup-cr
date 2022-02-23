@@ -17,3 +17,37 @@
     @apply border-2 border-secondary-500 text-secondary-500 font-semibold text-center min-w-[10rem] px-5 py-3 rounded-md shadow-md hover:bg-secondary-500 hover:text-primary-500 hover:shadow-lg hover:-translate-y-1;
   }
 }
+
+.product {
+  margin: 50px auto;
+  width: 280px;
+  height: 370px;
+  background: white;
+  border: 1px solid #333;
+  position: relative;
+  z-index: 90;
+}
+.ribbon-wrapper {
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+}
+.ribbon {
+  font: bold 12px sans-serif;
+  color: #333;
+  text-align: center;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform:    rotate(-45deg);
+  -ms-transform:     rotate(-45deg);
+  -o-transform:      rotate(-45deg);
+  position: relative;
+  padding: 7px 0;
+  top: 15px;
+  left: -30px;
+  width: 120px;
+  background-color: #52E2C0;
+  color: #000;
+}
