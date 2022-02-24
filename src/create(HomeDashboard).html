@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Event</title>
+    <!-- <script  src="https://cdn.tailwindcss.com"></script> -->
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 min-h-screen">
+<!--Sidebar-->
+<div class="flex" >
+    <div class="flex flex-col w-64 min-h-screen px-3 py-8 overflow-y-auto bg-primary-600">
+        <h2 class="text-3xl font-bold text-center text-white">CRANIUM</h2>
+
+        <div class="flex flex-col justify-between mt-6">
+            <aside>
+                <ul>
+                    <li>
+                        <a class="flex items-center px-4 py-2 mt-5 text-gray-600 rounded-md hover:bg-gray-200" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                            </svg>
+
+                            <span class="mx-4 font-medium text-white">Overview</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center px-4 py-2 mt-5 text-gray-600 rounded-md hover:bg-gray-200" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+
+                            <span class="mx-4 font-medium text-white">Events</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center px-4 py-2 mt-5 text-gray-600 rounded-md hover:bg-gray-200" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+
+                            <span class="mx-4 font-medium text-white">Billing</span>
+                        </a>
+
+                    <li>
+                        <a class="flex items-center px-4 py-2 mt-5 text-gray-600 rounded-md hover:bg-gray-200" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                            </svg>
+
+                            <span class="mx-4 font-medium text-white">Integration</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="flex items-center px-4 py-2 mt-5 text-gray-600 rounded-md hover:bg-gray-200" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2" />
+                            </svg>
+
+                            <span class="mx-4 font-medium text-white">Profile</span>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </aside>
+        </div>
+    </div>
+    <div class="flex-1 bg-primary-700">
+        <div class="mx-0 p-8 font-bold text-white">
+            Create Event
+        </div>
+
+
+
+        <!-- Main content -->
+        <div class="flex-1 bg-primary-700">
+            <div class="w-full bg-grey-lightest">
+                <div class="container mx-auto">
+                    <div class="py-4 px-8">
+                        <div class="flex flex-col md:flex-row mb-4">
+                            <div class="w-1/4">
+                                <label class="block text-white text-sm font-bold mb-2" for="first_name">Event Name</label>
+                                <input class="appearance-none border rounded w-3/4 h-4/5 py-2 px-3 text-grey-darker" id="first_name"
+                                       type="text" placeholder="Your Event Name">
+                            </div>
+                            <div class="w-1/2">
+                                <label class="block text-white text-sm font-bold mb-2" for="last_name">Category</label>
+                                <input class="appearance-none border rounded w-1/2 h-4/5 py-2 px-3 text-grey-darker" id="category"
+                                       type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="mb-4 mt-8">
+                            <label class="block text-white text-sm font-bold mb-2" for="description">Description</label>
+                            <input class="appearance-none border rounded w-2/3 h-48 py-2 px-3 text-grey-darker" id="desc" type="desc"
+                                   placeholder="Description">
+                        </div>
+
+                        <div class="flex flex-col md:flex-row">
+                            <div class="mb-4 md:mr-10">
+                                <label class="block text-white text-sm font-bold mb-2" for="start_date">Start Date & Time</label>
+                                <input class="appearance-none border rounded h-16 text-grey-darker" id="startdate" type="startdate"
+                                       placeholder="12-02-2021 12:00:00">
+                            </div>
+                            <p class="text-2xl my-auto mx-4 font-bold">-</p>
+                            <div class="mb-4 md:mr-10">
+                                <label class="block text-white text-sm font-bold mb-2" for="end_date">End Date & Time</label>
+                                <input class="appearance-none border rounded h-16 text-grey-darker" id="enddate"
+                                       type="enddate" placeholder="12-02-2021 12:00:00">
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row">
+                            <div class="mb-4 md:mr-10">
+                                <div class="relative inline-block text-left">
+                                    <div>
+                                      <button type="button" class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500" id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                        Options
+                                        <!-- Heroicon name: solid/chevron-down -->
+                                        <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                          <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                      </button>
+                                      <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                                        <div class="py-1" role="none">
+                                          <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Account settings</a>
+                                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-1">Support</a>
+                                          <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-2">License</a>
+                                          <form method="POST" action="#" role="none">
+                                            <button type="submit" class="text-gray-700 block w-full text-left px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+
+                            <p class="text-2xl my-auto mx-4 font-bold">-</p>
+                            <div class="mb-4 md:mr-10">
+                                <label class="block text-white text-sm font-bold mb-2" for="company_name">Company Type</label>
+                                <input class="appearance-none border rounded h-16 px-4 text-grey-darker" id="companyname"
+                                       type="companyname" placeholder="Your Company Name">
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="flex flex-col md:flex-row mt-2 items-center md:gap-x-8">
+                            <button class="my-auto  bg-white hover:bg-green-600 text-black font-bold py-2 md:px-4 rounded-none w-36" type="submit">
+                                Save
+                            </button>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
